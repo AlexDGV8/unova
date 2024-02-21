@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+    --bs-width-img: 667px;
+    --bs-left-position: 75%
+}
+
+.bg-color-prime {
+    background-color: #424093;
+}
+
+.font-mont {
+    font-family: 'Montserrat', sans-serif; !important;
+}
+
+.img-banner {
+    left: 75%; !important;
+    width: var(--bs-width-img); !important;
+    bottom: 0;
+    z-index: 900;
+}
+
+.bg-logo-banner{
+    left: var(--bs-left-position); !important;
+    width: var(--bs-width-img); !important;
+    bottom: 0;
+    opacity: 20%;
+}
+
+
+.icon-pulse {
+    animation: pulse 2.3s linear infinite;
+}
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+
+    }
+    50%{
+        box-shadow: 0 0 0 13px rgba(255, 255, 255, 0.4);
+    }
+
+    100%{
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.4);
+    }
+}
+
+@media (max-width: 500px) {
+    .img-banner{
+        display: none;
+    }
+
+    .bg-logo-banner {
+        left: calc(var(--bs-left-position) - 20%);
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .img-banner{
+        display: none;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    .img-banner{
+        display: none;
+    }
+}
+
+.img-estudant {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    .img-estudant{
+        display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    .img-estudant{
+        display: none;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 990px) {
+    .img-estudant{
+        display: none;
+    }
+}
+
+.btn-banner:hover {
+    color: #424093;
+}
+
+.btn-play-banner {
+    background-color: #fff;
+}
+
+.btn-play-banner:hover {
+    background-color: #fff;
+    border-color: #aaa;
+}
+
+.fs-icon {
+    font-size: 1.9em; !important;
+}
+
+.line-height-center {
+    line-height: 0.70; !important;
+}
+
+.accordion-style {
+    border-bottom: 2px solid #fff;
+}
+
+.accordion-style-black {
+    border-bottom: 2px solid #000;
+}
+
+.accordion-question {
+    font-size: 1.3em;
+}
+
+.link-default {
+    color: #CFD3D7;
+}
+
+.link-default:hover {
+    color: #F2F2F2;
+}
+
+.btn-layout-course:active {
+    background-color: #424093;
+    border: none;
+    color: #FFF;
+}
+
+.btn-load-more {
+    background-color: #424093;
+    transition: 0.5s;
+}
+
+.btn-load-more:hover {
+    background-color: #272655;
+}
+
+.display-none {
+    display: none;
+}
